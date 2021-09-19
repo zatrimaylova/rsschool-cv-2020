@@ -25,10 +25,18 @@ __LLC "OtRemStroy"__
 _07/2019 - 01/2020,_
 *Verification and analysis of contracts, transaction support.*
 ## HARD SKILLS
-### HTML CSS JavaScript React.js GIT Bootstrap SCSS
+### HTML 
+### CSS 
+### JavaScript 
+### React.js 
+### GIT 
+### Bootstrap 
+### SCSS
 ## SOFT SKILLS
 ### Self management. Team work. Ready to develop and improve my skills.
 ## LANGUAGES
 ### English (B1-B2)
 ## INTERESTS
-### Film photography Quizzes Literature
+### Film photography
+### Quizzes 
+### Literature
