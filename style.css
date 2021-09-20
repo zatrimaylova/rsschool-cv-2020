@@ -67,7 +67,7 @@ nav {
   margin-left: 20px;
 }
 
-@media screen and (max-device-width: 320px) {
+/* @media screen and (max-device-width: 320px) {
   .navigation-list {
     display: flex;
     flex-direction: column;
@@ -92,7 +92,7 @@ nav {
     padding: 40px;
     display: block;
   }
-}
+} */
 
 .header-text {
   margin: 10px 0 0 30px;
@@ -141,17 +141,7 @@ nav {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
-  /* flex-basis: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-  gap: 23px; */
 }
-
-/* .hard-skills-info ::after {
-  content: "";
-  justify-content: space-around;
-} */
 
 .hard-skills-info li {
   padding: 5px 20px;
