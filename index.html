@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
+  <div class="container">
+    <header>
       <nav>
-        <ul>
-          <li><a href="#contacts">contacts</a></li>
+        <ul class="navigation-list">
           <li><a href="#education">education</a></li>
           <li><a href="#work-experience">work experience</a></li>
           <li><a href="#hard-skills">hard skills</a></li>
@@ -18,35 +18,42 @@
           <li><a href="#languages">languages</a></li>
           <li><a href="#interests">interests</a></li>
         </ul>
-        <img src="" alt="">
-        <h1>Maria Zatrimaylova</h1>
-        <h2>Frontend developer</h2>
-        <span>Minsk, Belarus</span>
-        <span>27 December, 1997</span>
       </nav>
-    </div>
-  </header>
-  <main>
-    <div class="container">
-      <section id="contacts">
-        <h2>Contacts:</h2>
-        <ul>
-          <li>
-            <a href="tel:+375447355366">+375 (44) 735-53-66</a>
-          </li>
-          <li>
-            <a href="linkedin.com/in/maria-zatrimaylova">linkedin.com/in/maria-zatrimaylova</a>
-          </li>
-          <li>
-            <a href="https://github.com/zatrimaylova">github.com</a>
-          </li>
-          <li>
-            <a href="mailto:m.zatrimaylova@gmail.com">m.zatrimaylova@gmail.com</a>
-          </li>
-        </ul>
-      </section>
-      <section id="education">
-        <h2>Education</h2>
+      <div class="header-info">
+        <div class="header-basic">
+          <img class="photo" src="./img/header/photo_cv.jpg" alt="photo">
+          <section class="header-text">
+            <h1>Maria Zatrimaylova</h1>
+            <h2>Frontend developer</h2>
+            <p>Minsk, Belarus</p>
+            <p>27 December, 1997</p>
+          </section>
+        </div>
+        <section id="contacts">
+          <h2 class="contacts-title">Contacts:</h2>
+          <ul class="contacts-list">
+            <li>
+              <a href="tel:+375447355366">+375 (44) 735-53-66</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/maria-zatrimaylova/">linkedin.com</a>
+            </li>
+            <li>
+              <a href="https://github.com/zatrimaylova">github.com</a>
+            </li>
+            <li>
+              <a href="mailto:m.zatrimaylova@gmail.com">m.zatrimaylova@gmail.com</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      
+    </header>
+    <main>
+      <section class="info-section retrospective-section" id="education">
+        <div class="section-header">
+          <h2>Education</h2>
+        </div>
         <article>
           <h3>Frontend developer</h3>
           <p>IT-school MyFreedom <br> 10/2020 - 03/2021,</p>
@@ -60,8 +67,10 @@
           <p>The Belarusian State University, Faculty of Law<br> 09/2015 - 06/2019</p>
         </article>
       </section>
-      <section id="work-experience">
-        <h2>Work experience</h2>
+      <section class="info-section retrospective-section" id="work-experience">
+        <div class="section-header">
+          <h2>Work experience</h2>
+        </div>
         <article>
           <h3>Lawyer</h3>
           <b>RUР “Institute of Soil Science and Agrochemistry”</b>
@@ -75,9 +84,11 @@
           <p>Verification and analysis of contracts, transaction support.</p>
         </article>
       </section>
-      <section id="hard-skills">
-        <h3>Hard skills</h3>
-        <ul>
+      <section class="info-section" id="hard-skills">
+        <div class="section-header">
+          <h2>Hard skills</h2>
+        </div>
+        <ul class="hard-skills-info">
           <li>HTML</li>
           <li>CSS</li>
           <li>SCSS</li>
@@ -88,28 +99,43 @@
           <li>Figma</li>
         </ul>
       </section>
-      <section id="soft-skills">
-        <h2>Soft skills</h2>
-        <p>Self management. Team work. Ready to develop and improve my skills.</p>
+      <section class="info-section" id="soft-skills">
+        <div class="section-header">
+          <h2>Soft skills</h2>
+        </div>
+        <p class="section-text">Self management. Team work. Ready to develop and improve my skills.</p>
       </section>
-      <section id="languages">
-        <h2>Languages</h2>
-        <span>English (B1-B2)</span>
+      <section class="info-section language" id="languages">
+        <div class="section-header language-title">
+          <h2>Languages</h2>
+        </div>
+        <span class="language-info">English (B1-B2)</span>
       </section>
-      <section id="interests">
-        <ul>
+      <section class="info-section" id="interests">
+        <div class="section-header">
+          <h2>interests</h2>
+        </div>
+        <ul class="interests-info">
           <li>Film photography</li>
           <li>Quizzes</li>
           <li>Literature</li>
         </ul>
       </section>
-    </div>
-  </main>
-  <footer>
-    <div class="container">
-      <div></div>
-      <div></div>
-    </div>
-  </footer>
+    </main>
+    <footer>
+      <div class="git-link">
+        <a href="https://github.com/zatrimaylova">
+          <img src="./img/footer/logo-GitHub.png" alt="logo GitHub">
+        </a>
+      </div>
+      <div class="courses">
+        <a href="https://rs.school/js/">
+          <img src="./img/footer/logo-rsschool.png" alt="logo rsschool">
+        </a>
+      </div>
+      <div class="date"><span>2021</span></div>
+      <div class="credits">Background photo by <br> <a href="https://unsplash.com/@brandi1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brandi Redd</a> on <a href="https://unsplash.com/s/photos/site-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
+    </footer>
+  </div>
 </body>
 </html>
