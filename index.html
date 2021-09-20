@@ -8,12 +8,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,300;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/highlightsjs//an-old-hope.min.css">
+  <link rel="stylesheet" media="(device-height > 320px)" />
   <title>CV Maria Zatrimaylova</title>
 </head>
 <body>
   <div class="container">
     <header>
-      <nav>
+      <nav class="navigation base-navigation" id="base-navigation">
         <ul class="navigation-list">
           <li><a href="#education">education</a></li>
           <li><a href="#work-experience">work experience</a></li>
@@ -24,6 +25,21 @@
           <li><a href="#code-example">code example</a></li>
         </ul>
       </nav>
+      <div class="hidden-container navigation">
+        <img class="nav-icon" src="./img/header/list.svg" alt="menu" id="nav-opener">
+        <nav class="hidden-navigation hidden" id="nav-adaptive">
+          <ul class="hidden-list">
+            <li><a href="#education">education</a></li>
+            <li><a href="#work-experience">work experience</a></li>
+            <li><a href="#hard-skills">hard skills</a></li>
+            <li><a href="#soft-skills">soft skills</a></li>
+            <li><a href="#languages">languages</a></li>
+            <li><a href="#interests">interests</a></li>
+            <li><a href="#code-example">code example</a></li>
+          </ul>
+        </nav>
+
+      </div>
       <div class="header-info">
         <div class="header-basic">
           <img class="photo" src="./img/header/photo_cv.jpg" alt="photo">
@@ -31,7 +47,7 @@
             <h1>Maria Zatrimaylova</h1>
             <h2>Frontend developer</h2>
             <p>Minsk, Belarus</p>
-            <p>27 December, 1997</p>
+            <p>27 December, 1997</p> 
           </section>
         </div>
         <section id="contacts">
@@ -41,10 +57,10 @@
               <a href="tel:+375447355366">+375 (44) 735-53-66</a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/maria-zatrimaylova/">linkedin.com</a>
+              <a href="https://www.linkedin.com/in/maria-zatrimaylova/" target="_blank">linkedin.com</a>
             </li>
             <li>
-              <a href="https://github.com/zatrimaylova">github.com</a>
+              <a href="https://github.com/zatrimaylova" target="_blank">github.com</a>
             </li>
             <li>
               <a href="mailto:m.zatrimaylova@gmail.com">m.zatrimaylova@gmail.com</a>
@@ -136,7 +152,7 @@
         <article class="code-article">
           <div class="code-title" id="style-title">
             <h3>SCSS:</h3>
-            <svg id="style-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="12px" height="12px" viewBox="0 0 552.611 552.611" style="enable-background:new 0 0 552.611 552.611;" xml:space="preserve">
+            <svg id="style-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="12px" height="12px" viewBox="0 0 552.611 552.611" style="enable-background:new 0 0 552.611 552.611;" xml:space="preserve">
               <g>
                 <g>
                   <path d="M486.413,221.412L122.347,12.916c-52.938-30.318-95.852-5.44-95.852,55.563v415.652c0,61.004,42.914,85.882,95.852,55.563    l364.066-208.49C539.351,300.887,539.351,251.731,486.413,221.412z"/>
@@ -146,31 +162,31 @@
           </div>
           <pre class="hidden" id="style-code">
             <code>
-  .cart_preview {
-    border-top: 6px solid $theme-color;
-    background-color: #FFFFFF;
-    padding: 24px 30px 30px;
-  }
- 
-  .carts_container {
-    flex-basis: 74%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    gap: 23px;
+              .cart_preview {
+                border-top: 6px solid $theme-color;
+                background-color: #FFFFFF;
+                padding: 24px 30px 30px;
+              }
+            
+              .carts_container {
+                flex-basis: 74%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: start;
+                gap: 23px;
 
-    &::after {
-      content: "";
-      justify-content: space-around;
-    }
-  }
+                &::after {
+                  content: "";
+                  justify-content: space-around;
+                }
+              }
             </code>
           </pre>
         </article>
         <article class="code-article">
           <div class="code-title" id="script-title" >
             <h3>JavaScript:</h3>
-            <svg id="script-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="12px" height="12px" viewBox="0 0 552.611 552.611" style="enable-background:new 0 0 552.611 552.611;" xml:space="preserve">
+            <svg id="script-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="12px" height="12px" viewBox="0 0 552.611 552.611" style="enable-background:new 0 0 552.611 552.611;" xml:space="preserve">
               <g>
                 <g>
                   <path d="M486.413,221.412L122.347,12.916c-52.938-30.318-95.852-5.44-95.852,55.563v415.652c0,61.004,42.914,85.882,95.852,55.563    l364.066-208.49C539.351,300.887,539.351,251.731,486.413,221.412z"/>
@@ -181,18 +197,18 @@
           
           <pre class="hidden" id="script-code">
             <code>
-  function getMiddle(s) {
-    const index = Math.floor(s.length / 2);
-    const result = s.length % 2 ? s[index] : s.slice(index - 1, index + 1);
-    return result;
-  }
+              function getMiddle(s) {
+                const index = Math.floor(s.length / 2);
+                const result = s.length % 2 ? s[index] : s.slice(index - 1, index + 1);
+                return result;
+              }
             </code>
           </pre>
         </article>
         <article class="code-article">
           <div class="code-title" id="react-title">
             <h3>React.js:</h3>
-            <svg id="react-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="12px" height="12px" viewBox="0 0 552.611 552.611" style="enable-background:new 0 0 552.611 552.611;" xml:space="preserve">
+            <svg id="react-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="12px" height="12px" viewBox="0 0 552.611 552.611" style="enable-background:new 0 0 552.611 552.611;" xml:space="preserve">
               <g>
                 <g>
                   <path d="M486.413,221.412L122.347,12.916c-52.938-30.318-95.852-5.44-95.852,55.563v415.652c0,61.004,42.914,85.882,95.852,55.563    l364.066-208.49C539.351,300.887,539.351,251.731,486.413,221.412z"/>
@@ -202,30 +218,30 @@
           </div>
           <pre class="hidden" id="react-code">
             <code>
-  class PDPEl extends React.Component { 
-    render() {
-      const products = this.props?.data?.category?.products;
-      const { product } = this.props;
-      const { loading } = this.props?.data;
-              
-      return (
-        &lt;Container&gt;
-          { loading && &lt;Loader /&gt; }
-          { products && 
-            products.map((item, index) => {
-              if (String(item.name).toUpperCase() === String(product).toUpperCase()) {
-                return (
-                  &lt;Gallery key={index} data={item.gallery} name={item.name} description={item.description} /&gt;
-                  &lt;AddingToCartForm {...this.props} /&gt;
-                  &lt;/&gt;
-                )
+              class PDPEl extends React.Component { 
+                render() {
+                  const products = this.props?.data?.category?.products;
+                  const { product } = this.props;
+                  const { loading } = this.props?.data;
+                          
+                  return (
+                    &lt;Container&gt;
+                      { loading && &lt;Loader /&gt; }
+                      { products && 
+                        products.map((item, index) => {
+                          if (String(item.name).toUpperCase() === String(product).toUpperCase()) {
+                            return (
+                              &lt;Gallery key={index} data={item.gallery} name={item.name} description={item.description} /&gt;
+                              &lt;AddingToCartForm {...this.props} /&gt;
+                              &lt;/&gt;
+                            )
+                          }
+                        })
+                      }
+                    &lt;/Container&gt;
+                  )
+                }
               }
-            })
-          }
-        &lt;/Container&gt;
-      )
-    }
-  }
             </code>
           </pre>
         </article>
@@ -233,17 +249,17 @@
     </main>
     <footer>
       <div class="git-link">
-        <a href="https://github.com/zatrimaylova">
+        <a href="https://github.com/zatrimaylova" target="_blank">
           <img src="./img/footer/logo-GitHub.png" alt="logo GitHub">
         </a>
       </div>
       <div class="courses">
-        <a href="https://rs.school/js/">
+        <a href="https://rs.school/js/" target="_blank">
           <img src="./img/footer/logo-rsschool.png" alt="logo rsschool">
         </a>
       </div>
       <div class="date"><span>2021</span></div>
-      <div class="credits">Background photo by <br> <a href="https://unsplash.com/@brandi1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brandi Redd</a> on <a href="https://unsplash.com/s/photos/site-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
+      <div class="credits">Background photo by <br> <a href="https://unsplash.com/@brandi1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Brandi Redd</a> on <a href="https://unsplash.com/s/photos/site-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a></div>
     </footer>
   </div>
   <script src="./script.js"></script>

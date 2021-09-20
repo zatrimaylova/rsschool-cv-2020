@@ -2,12 +2,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   background-image: url(./img/body/body_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: Montserrat;
 }
 
 .container {
@@ -30,7 +32,7 @@ header {
   border-radius: 20px 20px 0 0;
 }
 
-nav {
+.navigation {
   background-color: #808080;
   padding: 20px;
   border-radius: 20px 20px 0 0;
@@ -51,6 +53,44 @@ nav {
   color: white;
 }
 
+.hidden-container {
+  position: relative;
+}
+
+.hidden-navigation {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  display: flex;
+  z-index: 1000;
+  position: absolute;
+  background-color: #808080;
+  left: 0px;
+  padding-bottom: 10px;
+}
+
+.hidden-navigation ul {
+  width: 100%;
+}
+
+.hidden-navigation li {
+  margin: 10px 0;
+}
+
+.hidden-navigation a {
+  color: black;
+}
+
+.hidden-navigation a:hover {
+  color: white;
+}
+
+.nav-icon {
+  width: 30px;
+  margin: 10px 0 0 10px;
+}
+
 .header-info {
   padding: 40px;
   display: flex;
@@ -63,36 +103,66 @@ nav {
 
 .photo {
   width: 250px;
+  height: 250px;
   border-radius: 50%;
   margin-left: 20px;
 }
 
-/* @media screen and (max-device-width: 320px) {
-  .navigation-list {
-    display: flex;
-    flex-direction: column;
+@media (max-width: 900px) {
+  .base-navigation {
+    display: none;
   }
 
   .photo {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-left: 5px;
   }
 
-  .header-basic {
-    display: block;
+  .navigation-list {
+    display: none;
   }
 
-  .header-text {
-    margin-left: 0;
+  .header-basic {
+    flex-direction: column;
   }
 
   .header-info {
     padding: 40px;
-    display: block;
+    flex-direction: column;
   }
-} */
+
+  .hard-skills-info {
+    flex-direction: column;
+  }
+
+  .hard-skills-info li {
+    margin-top: 5px;
+  }
+
+  .interests-info {
+    flex-direction: column;
+  }
+
+  .interests-info li {
+    margin-top: 5px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer div {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 901px) {
+  .hidden-container {
+    display: none;
+  }
+}
 
 .header-text {
   margin: 10px 0 0 30px;
@@ -197,10 +267,6 @@ nav {
 .code-title svg {
   transform: rotate(90deg);
 }
-
-/* .rotated {
-  transform: rotate(180deg);
-} */
 
 .hidden {
   display: none;
