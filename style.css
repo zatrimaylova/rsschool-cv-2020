@@ -182,6 +182,30 @@ nav {
   margin-right: 20px;
 }
 
+.code-article {
+  padding: 20px;
+}
+
+.code-title {
+  cursor: pointer;
+}
+
+.code-title h3 {
+  display: inline-block;
+}
+
+.code-title svg {
+  transform: rotate(90deg);
+}
+
+/* .rotated {
+  transform: rotate(180deg);
+} */
+
+.hidden {
+  display: none;
+}
+
 footer {
   background-color: #808080;
   display: flex;
