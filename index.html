@@ -14,7 +14,7 @@
 <body>
   <div class="container">
     <header>
-      <nav>
+      <nav class="navigation base-navigation" id="base-navigation">
         <ul class="navigation-list">
           <li><a href="#education">education</a></li>
           <li><a href="#work-experience">work experience</a></li>
@@ -25,6 +25,21 @@
           <li><a href="#code-example">code example</a></li>
         </ul>
       </nav>
+      <div class="hidden-container navigation">
+        <img class="nav-icon" src="./img/header/list.svg" alt="menu" id="nav-opener">
+        <nav class="hidden-navigation hidden" id="nav-adaptive">
+          <ul class="hidden-list">
+            <li><a href="#education">education</a></li>
+            <li><a href="#work-experience">work experience</a></li>
+            <li><a href="#hard-skills">hard skills</a></li>
+            <li><a href="#soft-skills">soft skills</a></li>
+            <li><a href="#languages">languages</a></li>
+            <li><a href="#interests">interests</a></li>
+            <li><a href="#code-example">code example</a></li>
+          </ul>
+        </nav>
+
+      </div>
       <div class="header-info">
         <div class="header-basic">
           <img class="photo" src="./img/header/photo_cv.jpg" alt="photo">
@@ -147,24 +162,24 @@
           </div>
           <pre class="hidden" id="style-code">
             <code>
-  .cart_preview {
-    border-top: 6px solid $theme-color;
-    background-color: #FFFFFF;
-    padding: 24px 30px 30px;
-  }
- 
-  .carts_container {
-    flex-basis: 74%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    gap: 23px;
+              .cart_preview {
+                border-top: 6px solid $theme-color;
+                background-color: #FFFFFF;
+                padding: 24px 30px 30px;
+              }
+            
+              .carts_container {
+                flex-basis: 74%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: start;
+                gap: 23px;
 
-    &::after {
-      content: "";
-      justify-content: space-around;
-    }
-  }
+                &::after {
+                  content: "";
+                  justify-content: space-around;
+                }
+              }
             </code>
           </pre>
         </article>
@@ -182,11 +197,11 @@
           
           <pre class="hidden" id="script-code">
             <code>
-  function getMiddle(s) {
-    const index = Math.floor(s.length / 2);
-    const result = s.length % 2 ? s[index] : s.slice(index - 1, index + 1);
-    return result;
-  }
+              function getMiddle(s) {
+                const index = Math.floor(s.length / 2);
+                const result = s.length % 2 ? s[index] : s.slice(index - 1, index + 1);
+                return result;
+              }
             </code>
           </pre>
         </article>
@@ -203,30 +218,30 @@
           </div>
           <pre class="hidden" id="react-code">
             <code>
-  class PDPEl extends React.Component { 
-    render() {
-      const products = this.props?.data?.category?.products;
-      const { product } = this.props;
-      const { loading } = this.props?.data;
-              
-      return (
-        &lt;Container&gt;
-          { loading && &lt;Loader /&gt; }
-          { products && 
-            products.map((item, index) => {
-              if (String(item.name).toUpperCase() === String(product).toUpperCase()) {
-                return (
-                  &lt;Gallery key={index} data={item.gallery} name={item.name} description={item.description} /&gt;
-                  &lt;AddingToCartForm {...this.props} /&gt;
-                  &lt;/&gt;
-                )
+              class PDPEl extends React.Component { 
+                render() {
+                  const products = this.props?.data?.category?.products;
+                  const { product } = this.props;
+                  const { loading } = this.props?.data;
+                          
+                  return (
+                    &lt;Container&gt;
+                      { loading && &lt;Loader /&gt; }
+                      { products && 
+                        products.map((item, index) => {
+                          if (String(item.name).toUpperCase() === String(product).toUpperCase()) {
+                            return (
+                              &lt;Gallery key={index} data={item.gallery} name={item.name} description={item.description} /&gt;
+                              &lt;AddingToCartForm {...this.props} /&gt;
+                              &lt;/&gt;
+                            )
+                          }
+                        })
+                      }
+                    &lt;/Container&gt;
+                  )
+                }
               }
-            })
-          }
-        &lt;/Container&gt;
-      )
-    }
-  }
             </code>
           </pre>
         </article>
@@ -234,17 +249,17 @@
     </main>
     <footer>
       <div class="git-link">
-        <a href="https://github.com/zatrimaylova">
+        <a href="https://github.com/zatrimaylova" target="_blank">
           <img src="./img/footer/logo-GitHub.png" alt="logo GitHub">
         </a>
       </div>
       <div class="courses">
-        <a href="https://rs.school/js/">
+        <a href="https://rs.school/js/" target="_blank">
           <img src="./img/footer/logo-rsschool.png" alt="logo rsschool">
         </a>
       </div>
       <div class="date"><span>2021</span></div>
-      <div class="credits">Background photo by <br> <a href="https://unsplash.com/@brandi1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brandi Redd</a> on <a href="https://unsplash.com/s/photos/site-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
+      <div class="credits">Background photo by <br> <a href="https://unsplash.com/@brandi1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Brandi Redd</a> on <a href="https://unsplash.com/s/photos/site-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a></div>
     </footer>
   </div>
   <script src="./script.js"></script>

@@ -1,6 +1,7 @@
 const styleEl = document.querySelector('#style-title');
 const scriptEl = document.querySelector('#script-title');
 const reactEl = document.querySelector('#react-title');
+const iconNavEl = document.querySelector('#nav-opener');
 
 styleEl.addEventListener('click', () => {
   const styleCodeEl = document.querySelector('#style-code');
@@ -40,3 +41,15 @@ reactEl.addEventListener('click', () => {
     svgEl.style.transform = 'rotate(90deg)'; 
   }
 });
+
+iconNavEl.addEventListener('click', () => {
+  const navigationEl = document.querySelector('#nav-adaptive');
+
+  if(navigationEl.classList.contains('hidden')) {
+    navigationEl.classList.remove('hidden');
+    iconNavEl.src = './img/header/close.svg';
+  } else {
+    navigationEl.classList.add('hidden');
+    iconNavEl.src = './img/header/list.svg';
+  }
+})
