@@ -109,8 +109,18 @@ header {
 }
 
 @media (max-width: 900px) {
+  .nav-icon {
+    width: 30px;
+    height: 20px;
+    margin: 10px 0 0 10px;
+  }
+
   .base-navigation {
     display: none;
+  }
+
+  .hidden-navigation {
+    z-index: 10000;
   }
 
   .photo {
