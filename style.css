@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  max-width: 1024px;
   margin: 50px auto;
   background-color: #EBECF0; 
   border-radius: 20px;
@@ -106,72 +106,6 @@ header {
   height: 250px;
   border-radius: 50%;
   margin-left: 20px;
-}
-
-@media (max-width: 900px) {
-  .nav-icon {
-    width: 30px;
-    height: 20px;
-    margin: 10px 0 0 10px;
-  }
-
-  .base-navigation {
-    display: none;
-  }
-
-  .hidden-navigation {
-    z-index: 10000;
-  }
-
-  .photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-left: 5px;
-  }
-
-  .navigation-list {
-    display: none;
-  }
-
-  .header-basic {
-    flex-direction: column;
-  }
-
-  .header-info {
-    padding: 40px;
-    flex-direction: column;
-  }
-
-  .hard-skills-info {
-    flex-direction: column;
-  }
-
-  .hard-skills-info li {
-    margin-top: 5px;
-  }
-
-  .interests-info {
-    flex-direction: column;
-  }
-
-  .interests-info li {
-    margin-top: 5px;
-  }
-
-  footer {
-    flex-direction: column;
-  }
-
-  footer div {
-    margin-bottom: 15px;
-  }
-}
-
-@media (min-width: 901px) {
-  .hidden-container {
-    display: none;
-  }
 }
 
 .header-text {
